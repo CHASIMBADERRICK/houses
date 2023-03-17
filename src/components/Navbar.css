@@ -1,0 +1,37 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    /* background-color: #bc3b3b; */
+    color: white;
+    }
+
+    nav ul {
+    display: flex;
+    list-style: none;
+    }
+
+    nav ul li {
+    margin-right: 1rem;
+    font-size: large;
+}
+    
+
+    nav ul li a {
+    color: blue;
+    text-decoration: none;
+
+    
+}
+nav ul li :hover  {
+    color: #b21f25;
+}
+
+
+
+
+
+
+
+

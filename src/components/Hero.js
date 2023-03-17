@@ -2,6 +2,7 @@ import React from "react";
 import houses from "../assets/city.jpg";
 import HeroBtn from "./HeroBtn";
 import { RiSearchLine } from "react-icons/ri";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const buttons = [
@@ -22,8 +23,23 @@ const Hero = () => {
         />
       </div>
       <div className="relative z-30 flex flex-col items-center w-full pt-12">
+
+        <motion.h1
+                animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
+                transition={{
+                    duration: 5,
+                    delay: 0.3,
+                    ease: [0.5, 0.71, 1, 1.5],
+                }}
+                initial={{ opacity: 0, scale: 0.5 }}
+                whileHover={{ scale: 1.2 }}
+            
+        className="text-white text-[32px] sm:text-[57px] font-bold">
+          WELCOME TO CANDID REALTOR LIMITED
+        </motion.h1>
+
         <p className="text-white text-[32px] sm:text-[57px] font-bold">
-          To each their home.
+          FIND A PERFECT DREAM HOUSE 
         </p>
         <p className="text-white  pt-2 sm:pt-0  sm:text-[23px]  ">
           Let's find a home that's perfect for you
